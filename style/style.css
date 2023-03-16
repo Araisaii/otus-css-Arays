@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Butler";
+    src: url(fonts/butler/Butler_Bold.otf);
+    font-weight: 400;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: normal;
+   
+   }
+
+h1 {
+    font-family: "Butler", sans-serif;
+    font-size: 87px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Butler", sans-serif;
+    font-size: 18px;
+}
+
+blockquote {
+    font-family: "Butler", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.wrapper {
+    font-family: "Butler", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.rectangle {
+    background-color: #FFFFFF;
+    width: 557px;
+    height:355px;
+}
+
+
+.name {
+    font-family: "Butler", sans-serif;
+    font-size: 87px;
+    font-weight: 400;
+}
+
+.strengths {
+    font-family: "Butler", sans-serif;
+    font-size: 92px;
+    font-weight: 400;
+}
+
+.list {
+    font-family: "Butler", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.discription {
+    font-size: 18px;
+    font-weight: 500;
+    list-style-type: none;
+    display:inline-flex;
+
+}
+
+
+address {
+    font-style: normal;
+}
