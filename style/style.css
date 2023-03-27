@@ -1,7 +1,13 @@
 @font-face {
-    font-family: "Butler";
-    src: url(fonts/butler/Butler_Bold.otf);
-    font-weight: 400;
+    font-family: "Butler_Light";
+    src: url('..//fonts/Butler/Butler_Light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Butler_Ultra_Light";
+    src: url('..//fonts/Butler/Butler_Ultra_Light.otf');
+    font-weight: 250;
 }
 
 html {
@@ -9,56 +15,91 @@ html {
     font-family: "Roboto";
     font-weight: 700;
     line-height: normal;
-   
-   }
+}
 
-h1 {
-    font-family: "Butler", sans-serif;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: "Butler_Light", sans-serif;
     font-size: 87px;
-    font-weight: 400;
+    font-weight: 300;
+    margin-bottom: 18px;
     text-align: center;
+ }
+
+.subtitel {
+    font-size: 18px;    
+    text-align: center;    
+} 
+
+.background {
+    
+    margin-bottom: 135px;
+    padding-top: 137px;
+    padding-bottom: 138px; 
+    position: relative;
+    margin: 135px auto;
+    width: 73.95%;
+    height: 630px;
+    background-image: url('..//img/studio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+.box {
+    background-color: #FFFFFF;
+    width: 52.3%; 
+    padding-top: 130px;
+    padding-bottom: 90px;
+    padding-left: 70px;
+    padding-right: 69px;  
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.about {
+    background: grey;
+    position: relative;
+}
+
+.about-title {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    transform: rotate(-90deg);
 }
 
 h2 {
-    font-family: "Butler", sans-serif;
     font-size: 18px;
 }
 
 blockquote {
-    font-family: "Butler", sans-serif;
+    font-family: "Butler_Ultra_Light", sans-serif;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 250;
 }
-
-.wrapper {
-    font-family: "Butler", sans-serif;
-    font-size: 18px;
-    text-align: center;
-}
-
-.rectangle {
-    background-color: #FFFFFF;
-    width: 557px;
-    height:355px;
-}
-
 
 .name {
-    font-family: "Butler", sans-serif;
+    font-family: "Butler_Light", sans-serif;
     font-size: 87px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .strengths {
-    font-family: "Butler", sans-serif;
+    font-family: "Butler_Light", sans-serif;
     font-size: 92px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .list {
-    font-family: "Butler", sans-serif;
+    font-family: "Butler_Light", sans-serif;
     font-size: 34px;
-    font-weight: 400;
+    font-weight: 300;
     list-style-type: none;
 }
 
@@ -73,4 +114,9 @@ blockquote {
 
 address {
     font-style: normal;
+}
+
+main{
+    position: relative;
+
 }
