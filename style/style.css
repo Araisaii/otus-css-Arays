@@ -70,10 +70,12 @@ button {
 .about {
     /* background: grey; */
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto 169px;
 
     display: flex;
     gap: 147px;
-    margin-bottom: 169px;
+    /* margin-bottom: 169px; */
     justify-content: center;
     align-items: flex-end;
    }
