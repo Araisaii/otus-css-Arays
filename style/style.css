@@ -22,6 +22,11 @@ html {
     box-sizing: border-box;
 }
 
+button {
+    margin:50px auto 60px;
+    display: block;
+}
+
 .title {
     font-family: "Butler_Light", sans-serif;
     font-size: 87px;
@@ -41,7 +46,7 @@ html {
     padding-top: 137px;
     padding-bottom: 138px; 
     position: relative;
-    margin: 135px auto;
+    margin: 0px auto 135px;
     width: 73.95%;
     height: 630px;
     background-image: url('..//img/studio.jpg');
@@ -63,14 +68,29 @@ html {
 }
 
 .about {
-    background: grey;
+    /* background: grey; */
     position: relative;
+
+    display: flex;
+    gap: 147px;
+    margin-bottom: 169px;
+    justify-content: center;
+    align-items: flex-end;
+   }
+
+.img {
+    margin-left: 135px;
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    margin-right: 135px;
 }
 
 .about-title {
     position: absolute;
-    bottom: 20px;
-    right: 10px;
+    bottom: 45px;
+    right: 40px;
     transform: rotate(-90deg);
 }
 
@@ -82,12 +102,23 @@ blockquote {
     font-family: "Butler_Ultra_Light", sans-serif;
     font-size: 32px;
     font-weight: 250;
+    margin-bottom: 110px;
+}
+
+.text::before {
+    content: "";
+    width: 14px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    margin-bottom: 31px;
 }
 
 .name {
     font-family: "Butler_Light", sans-serif;
     font-size: 87px;
     font-weight: 300;
+    margin-bottom: 50px;
 }
 
 .strengths {
@@ -107,16 +138,25 @@ blockquote {
     font-size: 18px;
     font-weight: 500;
     list-style-type: none;
-    display:inline-flex;
-
+    display:flex;
+    gap: 2px;
+    padding: 0%;
+    flex-wrap: wrap;
 }
 
+.items {
+    margin-bottom: 55px;
+}
+
+
+.items::after {
+    content:"/";
+}
+
+.items:last-child::after {
+    content: "";
+}
 
 address {
     font-style: normal;
-}
-
-main{
-    position: relative;
-
 }
