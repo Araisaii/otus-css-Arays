@@ -108,7 +108,6 @@ blockquote {
     content: "";
     width: 14px;
     height: 4px;
-    background-color: black;
     display: block;
     margin-bottom: 31px;
 }
@@ -180,15 +179,19 @@ blockquote {
     grid-template-rows: repeat(3, 1fr);
     align-items: end;
     grid-row:2;
-
-    
 }
 
 .website {
     transform-origin: top left;
     transform: rotate(-90deg);
     margin: 0 auto;
-   
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+
 }
 
 .brand_image {
@@ -204,7 +207,7 @@ blockquote {
     margin: 0 auto;
 }
 
-.img_cafe {
+.testimonials_img {
     grid-row:2;
 }
 
@@ -218,6 +221,7 @@ blockquote {
 .quote {
     grid-row: 1;
     grid-column: 2;
+    text-align: center;
 }
 
 .img_string_bag {
@@ -227,4 +231,51 @@ blockquote {
 
 address {
     font-style: normal;
+}
+
+.designers {
+    max-width: 1440px;
+    margin: 0 auto 270px;
+    display: grid;
+    grid-template-columns: 50% repeat(2, 25%);
+    grid-template-rows: 78px 500px;
+    gap: 18px;
+    padding-right: 74px;
+}
+
+.h2_designers {
+    grid-column: 2/4;
+    grid-row:1;
+    transform: rotate(-90deg);
+    justify-self: center;
+}
+
+.Jess_Wonder {
+    grid-column:1;
+    grid-row:1/3;
+}
+
+.Kameron_Clein {
+    grid-column:2;
+    grid-row: 2;
+}
+
+.about_Kameron,
+.about_Louisse,
+.about_Jess{
+    margin-top: 24px;
+}
+
+.about_Jess {
+    margin-left: 178px;
+}
+
+.Louisse_Red {
+    grid-column:3;
+    grid-row: 2;
+}
+
+.desc {
+    font-weight: 400;
+    display: inline;
 }
