@@ -21,6 +21,7 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
+                                                                /* 1 section */
 
 button {
     margin:50px auto 60px;
@@ -72,7 +73,7 @@ button {
     max-width: 1440px;
     margin: 0 auto 150px;
     display: flex;
-    gap: 147px;
+    gap: 10.2%;
     justify-content: center;
     align-items: flex-end;
 }
@@ -96,14 +97,17 @@ button {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 blockquote {
     font-family: "bitter", sans-serif;
     font-size: 26px;
     font-weight: 400;
-    margin-bottom: 170px;
+}
+
+.text {
+    margin-bottom: 165px;
 }
 
 .text::before {
@@ -119,7 +123,7 @@ blockquote {
     font-family: "playfair_display", sans-serif;
     font-size: 87px;
     font-weight: 300;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .discription {
@@ -145,26 +149,29 @@ blockquote {
     content: "";
 }
 
+                                                        /* 4 section */
+
 .testimonials_section {
+    background-color: antiquewhite;
     max-width: 1440px;
     margin: 0 auto 170px;
     display: grid;
     grid-template-columns: 4% repeat(2, 1fr);
     grid-template-rows: 1fr 84%;
-    column-gap: 2.8%;
+    column-gap: 1.9%;
     row-gap: 40px;
-    padding-left: 100px;
+    padding-left: 9%;
     padding-right: 100px; 
 }
 
 .subtitle_testimonials {
     grid-row:1;
-    grid-column: 2/4;
+    grid-column: 1/4;
 
 }
 .address {
     padding-top: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     align-items: end;
@@ -203,65 +210,75 @@ a {
 }
 
 .blockquote_img {
+    background-color: aqua;
     grid-row:2;
     display: grid;
-    grid-template-columns: 37% 40% 15%;
-    grid-template-rows: 40% 60%;
-}
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: repeat(2, 50%);
+    justify-items: center;
+    padding-top: 35px;
+}  
 
 .quote {
     grid-row: 1;
     grid-column: 2;
     text-align: center;
+    font-size: 32px; 
 }
 
 .testimonials__img_string_bag {
     height: 333px;
     grid-row: 2;
     grid-column: 2;
+    transform: translate(5px, -10px);
 }
 
 address {
     font-style: normal;
 }
 
+                                                          /* 3 section */
+
 .designers {
     max-width: 1440px;
-    margin: 0 auto 160px;
+    margin: 0 auto 150px;
     display: grid;
     grid-template-columns: 50% repeat(2, 25%);
-    grid-template-rows: 78px 500px;
-    gap: 18px;
-    padding-right: 30px;
-    padding-left: 70px;
-    overflow: auto;
+    grid-template-rows: 90px 520px;
+    row-gap: 5px;
+    column-gap: 0.7%;
+    padding-right: 2.1%;
+    padding-left: 3.5%;
+    
 }
 
 .h2_designers {
     grid-column: 2/4;
     grid-row:1;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateY(10px);
     justify-self: center;
 }
 
 .Jess_Wonder {
     grid-column:1;
     grid-row:1/3;
+    margin-left: 25px;
 }
 
 .Kameron_Clein {
     grid-column:2;
     grid-row: 2;
+   
 }
 
 .about_Kameron,
 .about_Louisse,
 .about_Jess{
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .about_Jess {
-    margin-left: 178px;
+    margin-left: 310px; 
 }
 
 .Louisse_Red {
@@ -273,6 +290,8 @@ address {
     font-weight: 400;
     display: inline;
 }
+
+                                                        /* 5 section */
 
 .list {
     font-family: "bitter", sans-serif;
