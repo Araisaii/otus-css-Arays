@@ -25,19 +25,18 @@
 
     <!-- О создателе -->
     <main class="about">
-        <section class="img">
-            <img src="img/katya_mills.jpg" height="840px">
-        </section>
+        
+        <img class="about__img_katya_mills" src="img/katya_mills.jpg" alt="Фотография: Катя Милс">
         
         <section class="desc">
-            <p class="name">Katya Mills</p>
+            <p class="name">Katya <br>Mills</p>
             <p class="discription">Art Director</p>
         
             <ul class="discription">
-                <li class="items discription">Scenography</li>
-                <li class="items discription">Styling</li>
-                <li class="items discription">Creative Photography</li>
-                <li class="items discription">Design</li>
+                <li class="items">Scenography</li>
+                <li class="items">Styling</li>
+                <li class="items">Creative Photography</li>
+                <li class="items">Design</li>
             </ul>
 
             <blockquote class="text"> 
@@ -51,33 +50,57 @@
     <!-- Дизайнеры -->
     <section class="designers">
         <h2 class="h2_designers">Designers</h2>
-        <article class="Jess_Wonder">
-           <p><img src="img/colleen.png"></p>
-           <div class="about_Jess">
-                <p>JESS WONDER</p>
-                <p>From/<span class="desc">Be more flower</span></p>
-                <p>Skills/<span class="desc">Design Strategy / Marketing</span></p>
-           </div>
-        </article>
 
-        <article class="Kameron_Clein">
-            <div><img src="img/handbag.png"></div>
-            
-            <div class="about_Kameron">
-                <p>KAMERON CLEIN</p>
-                <p>From/ <span class="desc">Be more flower</span></p>
-                <p>Skills/ <span class="desc">Design Strategy / Marketing</span></p>
-            </div>    
-        </article>
-
-        <article class="Louisse_Red">
-            <p><img src="img/notebook.png"></p>
-            <div class="about_Louisse">
-                <p>LOUISSE RED</p>
-                <p>From/ <span class="desc">Be more flower</span></p>
-                <p>Skills/ <span class="desc">Design Strategy / Marketing</span></p>
+        <figure class="Jess_Wonder">
+            <div>
+                <picture>
+                    <source srcset="i" media="(max-width:450px)">
+                    <img src="img/colleen.png" alt="Картинка: Девушка"> 
+                </picture>
             </div>
-        </article>
+            <div >
+                <figcaption class="about_Jess">
+                    <p>JESS WONDER</p>
+                    <p>From/<span class="desc">Be more flower</span></p>
+                    <p>Skills/<span class="desc">Design Strategy / Marketing</span></p>
+                </figcaption>
+            </div>
+            
+        </figure>
+
+        <figure class="Kameron_Clein">
+            <div>
+               <picture>
+                    <source srcset="___" media="(max-width:450px)">
+                    <img src="img/handbag.png" alt="Картинка: Клатч"> 
+                </picture> 
+            </div>
+            
+            <div>
+                <figcaption class="about_Kameron">
+                    <p>KAMERON CLEIN</p>
+                    <p>From/ <span class="desc">Be more flower</span></p>
+                    <p>Skills/ <span class="desc">Design Strategy / Marketing</span></p>
+                </figcaption>
+             </div>           
+        </figure>
+
+        <figure class="Louisse_Red">
+            <div>
+                <picture>
+                    <source srcset="img/mobile/colleen_md.png" media="(max-width:450px)">
+                    <img src="img/notebook.png" alt="Картинка: Записная книжка">
+                </picture>
+            </div>
+            
+            <div>
+                <figcaption class="about_Louisse">
+                    <p>LOUISSE RED</p>
+                    <p>From/ <span class="desc">Be more flower</span></p>
+                    <p>Skills/ <span class="desc">Design Strategy / Marketing</span></p>
+                </figcaption>
+            </div> 
+        </figure>
     </section>
 
     <!-- Отзывы -->
@@ -106,35 +129,45 @@
             </div>
         </section>
 
-        <div class="testimonials_img"><img src="img/cafe.png" height="757px"></div>
+        <img class="testimonials__img_cafe" src="img/cafe.png" alt="Фотография: Кафе">
 
         <div class="blockquote_img">
             <blockquote class="quote">I just really want to do good work and work with some great people, people who challange me.</blockquote>
-            <div class="img_string_bag"><img src="img/string_bag.png" height="333px"></div>
+            <img class="testimonials__img_string_bag" src="img/string_bag.png" alt="Картинка: Авоська">
         </div>
     </section>
 
     <!-- Сильные стороны -->
-    <section>
-        <h2>Strong points</h2>
-        <p><img src="img/workplace.jpg"></p>
-        <p><img src="img/armchair.png"></p>
-        <p class="strengths">Strengths</p>
-        <ul class="list">
-            <li>Interiors</li>
-            <li>Outdoors</li>
-            <li>Portraits</li>
-            <li>Styling</li>
-            <li>Events</li>
-            <li>Architecture</li>
-            <li>Design</li>
-            <li>Celebrations</li>
-            <li>Artistic</li>
-            <li>Fashion</li>
-            <li>Nature</li>
-            <li>Creativity</li>
-        </ul>
-        <p><img src="img/armchair_2.png"></p>
+    <section class="strong_points">
+        
+        <div class="strong_points__col2">
+            <h2 class="strong_points__h2">Strong points</h2>
+            <img class="strong_points__img_armchair" src="img/armchair.png" alt="Фотография: Место отдыха">
+        </div>    
+
+        <img class="strong_points__img_workplace" src="img/workplace.jpg" alt="Картинка: Рабочее место">
+        
+        <div class="strong_points__col3">
+            <p class="strong_points__strengths">Strengths</p>
+            
+            <ul class="list">
+                <li>Interiors</li>
+                <li>Outdoors</li>
+                <li>Portraits</li>
+                <li>Styling</li>
+                <li>Events</li>
+                <li>Architecture</li>
+                <li>Design</li>
+                <li>Celebrations</li>
+                <li>Artistic</li>
+                <li>Fashion</li>
+                <li>Nature</li>
+                <li>Creativity</li>
+            </ul>
+        </div>
+
+      <img class="image" src="img/armchair.png" alt="Фотография: Место отдыха"> 
+
     </section>
     
 </body>
