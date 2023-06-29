@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mod Studio</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" href="style/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width:1024px)" href="style/tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,14 +27,17 @@
 
     <!-- О создателе -->
     <main class="about">
-        
-        <img class="about__img_katya_mills" src="img/katya_mills.jpg" alt="Фотография: Катя Милс">
-        
+
+        <picture>
+            <source srcset="img/mobile/katya_mills_md.png" media="(max-width: 767px)">
+            <img class="about__img_katya_mills" src="img/katya_mills.jpg" alt="Фотография: Катя Милс">
+        </picture>
+               
         <section class="desc">
-            <p class="name">Katya <br>Mills</p>
+            <p class="name">Katya Mills</p>
             <p class="discription">Art Director</p>
         
-            <ul class="discription">
+            <ul class="discription about__ul">
                 <li class="items">Scenography</li>
                 <li class="items">Styling</li>
                 <li class="items">Creative Photography</li>
@@ -54,7 +59,7 @@
         <figure class="Jess_Wonder">
             <div>
                 <picture>
-                    <source srcset="i" media="(max-width:450px)">
+                    <source srcset="img/mobile/collen_md.png" media="(max-width:767px)">
                     <img src="img/colleen.png" alt="Картинка: Девушка"> 
                 </picture>
             </div>
@@ -70,10 +75,7 @@
 
         <figure class="Kameron_Clein">
             <div>
-               <picture>
-                    <source srcset="___" media="(max-width:450px)">
-                    <img src="img/handbag.png" alt="Картинка: Клатч"> 
-                </picture> 
+                <img src="img/handbag.png" alt="Картинка: Клатч">  
             </div>
             
             <div>
@@ -86,11 +88,8 @@
         </figure>
 
         <figure class="Louisse_Red">
-            <div>
-                <picture>
-                    <source srcset="img/mobile/colleen_md.png" media="(max-width:450px)">
-                    <img src="img/notebook.png" alt="Картинка: Записная книжка">
-                </picture>
+            <div>               
+                <img src="img/notebook.png" alt="Картинка: Записная книжка">            
             </div>
             
             <div>
@@ -133,17 +132,20 @@
 
         <div class="blockquote_img">
             <blockquote class="quote">I just really want to do good work and work with some great people, people who challange me.</blockquote>
-            <img class="testimonials__img_string_bag" src="img/string_bag.png" alt="Картинка: Авоська">
+            
+            <picture class="testimonials__img_string_bag">
+                <source srcset="img/mobile/string_bag_md.png" media="(max-width: 767px)">
+                <img src="img/string_bag.png" alt="Картинка: Авоська">    
+            </picture>
+            
         </div>
     </section>
 
     <!-- Сильные стороны -->
     <section class="strong_points">
         
-        <div class="strong_points__col2">
-            <h2 class="strong_points__h2">Strong points</h2>
-            <img class="strong_points__img_armchair" src="img/armchair.png" alt="Фотография: Место отдыха">
-        </div>    
+        <h2 class="strong_points__h2">Strong points</h2>
+        <img class="strong_points__img_armchair" src="img/armchair.png" alt="Фотография: Место отдыха">
 
         <img class="strong_points__img_workplace" src="img/workplace.jpg" alt="Картинка: Рабочее место">
         
