@@ -21,6 +21,10 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    padding-top: 50px;
+}
                                                                 /* 1 section */
 
 button {
@@ -136,13 +140,13 @@ blockquote {
     flex-wrap: wrap;
 }
 
-.items {
+.about__ul {
     margin-bottom: 60px;
 }
 
 
 .items::after {
-    content:"/";
+    content:"/ ";
 }
 
 .items:last-child::after {
@@ -152,7 +156,6 @@ blockquote {
                                                         /* 4 section */
 
 .testimonials_section {
-    background-color: antiquewhite;
     max-width: 1440px;
     margin: 0 auto 170px;
     display: grid;
@@ -210,7 +213,6 @@ a {
 }
 
 .blockquote_img {
-    background-color: aqua;
     grid-row:2;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
@@ -240,16 +242,16 @@ address {
                                                           /* 3 section */
 
 .designers {
+    height: 625px;
     max-width: 1440px;
     margin: 0 auto 150px;
     display: grid;
-    grid-template-columns: 50% repeat(2, 25%);
     grid-template-rows: 90px 520px;
     row-gap: 5px;
     column-gap: 0.7%;
     padding-right: 2.1%;
     padding-left: 3.5%;
-    
+    overflow: auto;
 }
 
 .h2_designers {
@@ -286,10 +288,10 @@ address {
     grid-row: 2;
 }
 
-.desc {
+.desc__weight {
     font-weight: 400;
-    display: inline;
 }
+
 
                                                         /* 5 section */
 
@@ -302,6 +304,7 @@ address {
 }
 
 .strong_points {
+    max-width: 1440px;
     overflow: auto;
 }
 
@@ -344,7 +347,7 @@ address {
 .strong_points__col3 {
     display: flex;
     flex-direction: column;
-    row-gap: 18px;   
+    row-gap: 25px;   
 }
 
 .list {
@@ -383,4 +386,17 @@ address {
         grid-column: 4;
         grid-row: 2;
     }
+
+    .strong_points__img_armchair {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .strong_points__h2 {
+        transform: translate(20px, 40px) rotate(-90deg);
+    }
+}
+
+footer {
+    display: none;
 }

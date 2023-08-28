@@ -1,0 +1,70 @@
+
+button {
+    display: none;
+}
+
+body {
+    padding: 15px;
+    padding-bottom: 50px;
+}
+
+
+/* 1 section */
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-size:18px; 
+}
+                                        /* 2 section */
+                            
+.about{
+    margin: 0px auto 100px;
+    max-width: 90%;
+    padding-top: 100px;
+}
+
+.about-title {
+    transform: rotate(0) translateY(50px);
+}
+
+.desc {
+    margin-right: 0px;
+}
+
+.text {
+    margin-bottom: 50px;
+}
+
+.about__img_katya_mills {
+    height: 700px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+                                        /* 3 section */
+.about_Jess {
+    margin-left: 50%; 
+}
+
+
+                                        /* 4 section */
+.testimonials_section {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.testimonials__img_cafe {
+    height: 700px;
+}
+
+
+
+                                        /* 5 section */
+
+   
